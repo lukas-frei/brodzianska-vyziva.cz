@@ -1,0 +1,660 @@
+/*-------------------------------------
+Setup
+-------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after {
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+body {
+  max-width: 980px;
+  margin: auto;
+  background-color: #FFFAF1
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------------ fonts ------------- */
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.7em;
+  color: #332E24;
+}
+
+h1,h2,h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+
+/* ------------ buttons ------------- */
+
+a {
+  color: #332E24;
+  text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  width: 150px;
+  height: 40px;
+  padding: 8px;
+  margin: 20px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow: 3px 3px 8px rgba(0,0,0,0);
+}
+
+.btn-brown:link,
+.btn-brown:visited {
+  background: linear-gradient(#CCB88F, #9E8E6F);
+}
+
+.btn-pink:link,
+.btn-pink:visited {
+  background: linear-gradient(#9A5677, #8B0A5B);
+}
+
+.btn-green:link,
+.btn-green:visited {
+  background: linear-gradient(#B4C756, #6A8025);
+}
+
+/*-------------------------------------
+Uvod
+-------------------------------------*/
+
+#uvod img {
+  height: 320px;
+}
+
+.title {
+  width: 600px;
+  display: block;
+  float: right;
+  padding: 50px 0px 0 0;
+}
+
+.title p {
+  max-width: 450px;
+}
+
+#uvod-small img {
+  height: 220px;
+  margin-bottom: -40px;
+}
+
+.title-small {
+  width: 600px;
+  display: block;
+  float: right;
+  padding: 50px 0 0 0;
+  margin-right: 80px;
+}
+
+.title-small p {
+  visibility: hidden;
+}
+
+
+/* ------------ nav ------------- */
+
+nav {
+  display: block;
+  overflow: auto;
+  margin-top: -7px;
+  background: linear-gradient(#FFFAF1, #CCB88F);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  position: absolute;
+  width: 100%;
+  max-width: 980px;
+}
+
+.nav-menu {
+  z-index: 10;
+}
+
+.logo {
+  margin-top: 1px;
+  display: block;
+  float: left;
+  padding: 14px;
+  background: linear-gradient(#F9F2E5, #B19F7C);
+  width: 30%;
+}
+
+.nav-menu ul {
+  float: right;
+  width: 70%;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+  margin: 0 -2px;
+}
+
+nav ul a:link,
+nav ul a:visited {
+  display: block;
+  padding: 32px 24px 24px 24px;
+}
+
+nav ul a:last-child {
+  padding-right: 29.9px;
+}
+
+nav ul a:hover,
+nav ul a:active {
+  background: linear-gradient(#F9F2E5, #B19F7C);
+  transition: background 0.8s ease;
+}
+
+nav ul a.active {
+  background: linear-gradient(#F9F2E5, #B19F7C);
+}
+
+.nav-cambridge:hover,
+.nav-cambridge:active,
+.nav-cambridge.active {
+  background: linear-gradient(#F9F2E5, #9A5677);
+}
+
+.nav-metabolic:hover,
+.nav-metabolic:active {
+  background: linear-gradient(#F9F2E5, #6A8025);
+}
+
+.nav-metabolic.active {
+  background: linear-gradient(#F9F2E5, #6A8025);
+}
+
+
+/* ------------ programy ------------- */
+
+.programy {
+  margin-top: 90px;
+}
+
+.programy div {
+  position: relative;
+  margin: 2.5%;
+  width: 45%;
+  height: 600px;
+  float: left;
+  background-color: white;
+  padding: 35px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.programy div:last-child {
+  background-color: #FFFAF1;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0);
+}
+
+.programy img {
+  display: block;
+  margin: 0 auto;
+  width: 396px;
+}
+
+.programy p {
+  padding-bottom: 20px;
+}
+
+.programy .btn {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.programy span {
+  font-weight: bold;
+}
+
+.pro-cambridge p:first-of-type,
+.pro-metabolic p:first-of-type,
+.pro-trichologie p:first-of-type {
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: #6A8025;
+}
+
+.pro-cambridge p:first-of-type {
+  color: #8B0A5B
+}
+
+.pro-trichologie h2 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: #6A8025;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pro-zkusenosti h2 {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.pro-zkusenosti p {
+  padding: 30px 40px;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* ------------ footer ------------- */
+
+footer {
+  background: linear-gradient(#CCB88F, #9E8E6F);
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.nav-sec {
+  width: 60%;
+}
+
+.nav-sec ul {
+  display: block;
+  float: left;
+  padding: 40px 0px 40px 70px;
+}
+
+.nav-sec li:first-child {
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.facebook {
+  width: 40%;
+  float: right;
+  margin-top: 40px;
+  overflow: visible;
+}
+
+.copy {
+  width: 100%;
+  display: inline-block;
+  margin: 60px auto 50px auto;
+  text-align: center;
+}
+
+
+/*-------------------------------------
+Cambridge diet
+-------------------------------------*/
+
+.cambridge-diet {
+  padding: 0 2.5%;
+  background-color: white;
+  z-index: 2;
+  margin-top: 70px;
+
+}
+
+/*
+.nav-local-cam {
+  position: fixed;
+  margin: 20px 0 0 760px;
+  background-color: #FFFAF1;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+.nav-local-cam img {
+  width: 200px;
+}
+
+.nav-local-cam a {
+  display: block;
+  text-align: center;
+}
+*/
+
+/* ------------ cambridge benefits ------------- */
+
+.cambridge-diet h1 {
+  padding-top: 70px;
+  margin: 0px 0 40px;
+  color: #8B0A5B;
+}
+
+.cam-benefits li{
+  display: inline-block;
+  padding: 0 0 20px 20px;
+  font-size: 18px;
+}
+
+.cam-benefits img {
+  vertical-align: middle;
+  width: 30px;
+  display: inline-block;
+}
+
+/* ------------ cambridge popis ------------- */
+
+.cambridge-diet h2 {
+  margin: 60px 0 30px;
+  color: #8B0A5B;
+}
+
+.cambridge-popis {
+  width: 40%;
+  float: left;
+}
+
+.cambridge-popis p {
+  margin-bottom: 20px;
+}
+
+.cambridge-popis p:last-child {
+  margin-bottom: 70px;
+}
+
+.cambridge-produkty {
+  display: block;
+  width: 60%;
+  float: right;
+}
+
+/* ------------ cambridge-plany ------------- */
+
+.plany-p {
+  padding: 0px 0 30px 0;
+  font-size: 18px;
+}
+
+.cambridge-plany img {
+  margin: -10px 10px 10px 40px;
+  vertical-align: middle;
+  width: 70px;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.cambridge-plany li {
+  padding-left: 15px;
+  font-size: 18px;
+  display: inline-block;
+  width: 28%;
+}
+
+/* ------------ cambridge-poradenstvi ------------- */
+
+.cambridge-poradenstvi {
+  background-image: url("../images/foto-cambridge.jpg");
+  background-size: cover;
+  overflow: auto;
+  margin: 0 -2.5%;
+  margin-bottom: -20px;
+}
+
+.cambridge-poradenstvi-box {
+  width: 40%;
+  float: right;
+  background-color: rgba(255,255,240,0.9);
+  margin: 30px;
+  padding: 30px;
+}
+
+.cambridge-poradenstvi-box h2 {
+  margin-top: 20px;
+}
+
+.cambridge-poradenstvi-box p {
+  padding-bottom: 20px;
+}
+
+
+/*-------------------------------------
+Metabolic balance
+-------------------------------------*/
+
+.metabolic-balance {
+  padding: 0 2.5%;
+  background-color: white;
+  z-index: 2;
+  margin-top: 70px;
+
+}
+
+.metabolic-balance h1 {
+  padding-top: 70px;
+  margin: 0px 0 40px;
+  color: #6A8025;
+}
+
+.metabolic-p {
+  padding: 0px 0 30px 0;
+  font-size: 18px;
+}
+
+.metabolic-balance img {
+  margin: -10px 10px 20px 20px;
+  vertical-align: middle;
+  width: 70px;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.metabolic-balance li{
+  display: inline-block;
+  padding: 0 0 20px 20px;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+
+/* ------------ metabolic popis ------------- */
+
+.metabolic-balance h2 {
+  margin: 60px 0 30px;
+  color: #6A8025;
+}
+
+.metabolic-popis {
+  background-image: url("../images/foto-metabolic.jpg");
+  background-size: cover;
+  overflow: auto;
+  margin: 20px -2.5% 0 -2.5%;
+}
+
+.metabolic-popis-box {
+  width: 50%;
+  float: left;
+  background-color: rgba(255,255,240,0.9);
+  margin: 30px;
+  padding: 30px;
+}
+
+.metabolic-popis-box h2 {
+  margin-top: 20px;
+}
+
+.metabolic-popis p {
+  padding-bottom: 20px;
+}
+
+
+/* ------------ metabolic poradenství ------------- */
+
+.metabolic-poradenstvi {
+  padding-bottom: 40px;
+  margin-bottom: -20px;
+  max-width: 700px;
+}
+
+
+/*-------------------------------------
+Trichologie
+-------------------------------------*/
+
+.trichologie {
+  padding: 0 2.5%;
+  background-color: white;
+  z-index: 2;
+  margin-top: 70px;
+  padding-bottom: 30px;
+  margin-bottom: -20px;
+}
+
+.trichologie h1 {
+  padding-top: 70px;
+  margin: 0px 0 40px;
+  color: #6A8025;
+}
+
+.trichologie-benefits li{
+  display: inline-block;
+  padding: 0 0 20px 20px;
+  font-size: 18px;
+}
+
+.trichologie-benefits img {
+  vertical-align: middle;
+  width: 30px;
+  display: inline-block;
+}
+
+.trichologie-prubeh h2 {
+    margin: 40px 0 40px;
+    color: #6A8025;
+}
+
+.trichologie-prubeh li {
+  display: inline-block;
+  padding: 0 0 40px 30px;
+  font-size: 16px;
+  max-width: 800px;
+}
+
+.trichologie-prubeh img {
+  vertical-align: top;
+  width: 50px;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.trichologie footer {
+  margin-top: -60px;
+}
+
+
+/*-------------------------------------
+O mně
+-------------------------------------*/
+
+.omne {
+  padding: 0 2.5%;
+  background-color: white;
+  z-index: 2;
+  margin-top: 70px;
+  padding-bottom: 30px;
+  margin-bottom: -20px;
+}
+
+.omne-text {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+}
+
+.omne h1 {
+  padding-top: 70px;
+  margin: 0px 0 40px;
+}
+
+.omne h2 {
+  margin: 30px 0 30px;
+}
+
+.omne p {
+  padding-bottom: 20px;
+}
+
+.facebook-timeline {
+  margin: 70px 6% 0 6%;
+  margin-bottom: -300px;
+}
+
+
+/*-------------------------------------
+Kontakt
+-------------------------------------*/
+
+.kontakt {
+  padding: 0 2.5%;
+  background-color: white;
+  z-index: 2;
+  margin-top: 70px;
+  padding-bottom: 30px;
+  margin-bottom: -20px;
+}
+
+.kontakt-text {
+  width: 40%;
+  float: left;
+}
+
+.kontakt-text p:first-of-type {
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.kontakt h2 {
+  padding-top: 40px;
+  margin: 0px 0 30px;
+  font-size: 28px;
+}
+
+.kontakt p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.map {
+  margin-top: 40px;
+}
