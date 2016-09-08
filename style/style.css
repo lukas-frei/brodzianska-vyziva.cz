@@ -292,6 +292,7 @@ footer {
   box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
   overflow: hidden;
   margin-top: 20px;
+  clear: both;
 }
 
 .nav-sec {
@@ -543,8 +544,13 @@ Trichologie
 
 .trichologie h1 {
   padding-top: 70px;
-  margin: 0px 0 40px;
+  margin: 0 0 30px;
   color: #6A8025;
+}
+
+.trichologie p {
+  padding-bottom: 20px;
+  max-width: 750px;
 }
 
 .trichologie-benefits li{
@@ -639,7 +645,7 @@ Kontakt
   float: left;
 }
 
-.kontakt-text p:first-of-type {
+.kontakt-text p:nth-child(3) {
   font-size: 20px;
   line-height: 1.8em;
 }
