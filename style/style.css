@@ -20,7 +20,7 @@ Setup
 body {
   max-width: 980px;
   margin: auto;
-  background-color: #FFFAF1
+  background-color: #FFFAF1;
 }
 
 ul {
@@ -33,6 +33,8 @@ body {
   font-family: Georgia, serif;
   line-height: 1.7em;
   color: #332E24;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
 }
 
 h1,h2,h3 {
@@ -63,9 +65,9 @@ a {
 .btn:link,
 .btn:visited {
   display: block;
-  width: 150px;
-  height: 40px;
-  padding: 8px;
+  width: 180px;
+  height: 50px;
+  padding: 13px 0;
   margin: 20px 0;
   border-radius: 5px;
   text-decoration: none;
@@ -73,62 +75,60 @@ a {
   color: white;
   font-weight: bold;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  transition: box-shadow 500ms;
 }
 
 .btn:hover,
 .btn:active {
-  box-shadow: 3px 3px 8px rgba(0,0,0,0);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.7);
 }
 
 .btn-brown:link,
 .btn-brown:visited {
-  background: linear-gradient(#CCB88F, #9E8E6F);
+  background: #9E8E6F;
 }
 
 .btn-pink:link,
 .btn-pink:visited {
-  background: linear-gradient(#9A5677, #8B0A5B);
+  background: #8B0A5B;
 }
 
 .btn-green:link,
 .btn-green:visited {
-  background: linear-gradient(#B4C756, #6A8025);
+  background: #6A8025;
 }
 
 /*-------------------------------------
 Uvod
 -------------------------------------*/
 
-#uvod img {
-  height: 320px;
+#uvod {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  height: 406px;
+}
+
+#uvod-small {
+  background-image: url("../images/header-small.jpg");
+  background-size: cover;
+  height: 222px;
 }
 
 .title {
-  width: 600px;
-  display: block;
+  padding: 100px 50px 0 0;
   float: right;
-  padding: 50px 0px 0 0;
+  text-align: justify;
 }
 
 .title p {
-  max-width: 450px;
-}
-
-#uvod-small img {
-  height: 220px;
-  margin-bottom: -40px;
+  max-width: 410px;
+  font-size: 18px;
 }
 
 .title-small {
-  width: 600px;
   display: block;
   float: right;
-  padding: 50px 0 0 0;
-  margin-right: 80px;
-}
-
-.title-small p {
-  visibility: hidden;
+  padding: 50px 30px 0 0;
 }
 
 
@@ -195,10 +195,7 @@ nav ul a.active {
 }
 
 .nav-metabolic:hover,
-.nav-metabolic:active {
-  background: linear-gradient(#F9F2E5, #6A8025);
-}
-
+.nav-metabolic:active,
 .nav-metabolic.active {
   background: linear-gradient(#F9F2E5, #6A8025);
 }
@@ -208,6 +205,7 @@ nav ul a.active {
 
 .programy {
   margin-top: 90px;
+  text-align: justify;
 }
 
 .programy div {
@@ -229,7 +227,7 @@ nav ul a.active {
 .programy img {
   display: block;
   margin: 0 auto;
-  width: 396px;
+  width: 380px;
 }
 
 .programy p {
@@ -269,7 +267,8 @@ nav ul a.active {
   font-weight: bold;
   color: #6A8025;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 60px;
 }
 
 .pro-zkusenosti h2 {
@@ -279,7 +278,7 @@ nav ul a.active {
 }
 
 .pro-zkusenosti p {
-  padding: 30px 40px;
+  padding: 32px 15px;
   font-size: 18px;
   text-align: center;
 }
@@ -306,7 +305,7 @@ footer {
 }
 
 .nav-sec li:first-child {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   font-weight: bold;
 }
 
@@ -330,11 +329,13 @@ Cambridge diet
 -------------------------------------*/
 
 .cambridge-diet {
-  padding: 0 2.5%;
   background-color: white;
   z-index: 2;
-  margin-top: 70px;
+}
 
+.wraper {
+  width: 650px;
+  margin: 80px auto 0 auto;
 }
 
 /*
@@ -359,17 +360,18 @@ Cambridge diet
 
 .cambridge-diet h1 {
   padding-top: 70px;
-  margin: 0px 0 40px;
+  margin: 0px 0 40px 0;
   color: #8B0A5B;
 }
 
 .cam-benefits li{
   display: inline-block;
-  padding: 0 0 20px 20px;
-  font-size: 18px;
+  padding: 0 0 20px 0;
+  font-size: 16px;
 }
 
 .cam-benefits img {
+  margin-right: 10px;
   vertical-align: middle;
   width: 30px;
   display: inline-block;
@@ -382,11 +384,6 @@ Cambridge diet
   color: #8B0A5B;
 }
 
-.cambridge-popis {
-  width: 40%;
-  float: left;
-}
-
 .cambridge-popis p {
   margin-bottom: 20px;
 }
@@ -397,30 +394,48 @@ Cambridge diet
 
 .cambridge-produkty {
   display: block;
-  width: 60%;
-  float: right;
+  width: 80%;
+  margin: auto;
+}
+
+.produkty-vypis {
+  text-align: center;
+  color: #9A5677;
+  padding-top: 20px
 }
 
 /* ------------ cambridge-plany ------------- */
 
-.plany-p {
-  padding: 0px 0 30px 0;
-  font-size: 18px;
-}
-
-.cambridge-plany img {
-  margin: -10px 10px 10px 40px;
-  vertical-align: middle;
-  width: 70px;
-  display: inline-block;
+.cam-plany {
   padding: 20px 0;
 }
 
+.cambridge-plany {
+  margin: 30px 0;
+}
+
 .cambridge-plany li {
-  padding-left: 15px;
-  font-size: 18px;
+  width: 48%;
   display: inline-block;
-  width: 28%;
+  margin: 0 10px 10px 0;
+}
+
+.cambridge-plany li:last-child {
+  width: 48%;
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.cambridge-plany li p {
+  display: inline-block;
+  width: 215px
+}
+
+.cambridge-plany img {
+  width: 60px;
+  margin: 0 20px 25px 0;
+  vertical-align: middle;
+
 }
 
 /* ------------ cambridge-poradenstvi ------------- */
@@ -429,90 +444,184 @@ Cambridge diet
   background-image: url("../images/foto-cambridge.jpg");
   background-size: cover;
   overflow: auto;
-  margin: 0 -2.5%;
   margin-bottom: -20px;
 }
 
 .cambridge-poradenstvi-box {
-  width: 40%;
+  width: 39%;
   float: right;
   background-color: rgba(255,255,240,0.9);
-  margin: 30px;
+  margin: 40px;
   padding: 30px;
+  border-radius: 5px;
 }
 
 .cambridge-poradenstvi-box h2 {
   margin-top: 20px;
+  text-align: center;
 }
 
 .cambridge-poradenstvi-box p {
   padding-bottom: 20px;
 }
 
+.cambridge-poradenstvi-box strong {
+  color: #8B0A5B;
+}
+
+.cambridge-poradenstvi-box .btn {
+  margin: 15px auto;
+}
+
+/* ------------ cambridge-pribehy ------------- */
+
+.pribehy {
+  width: 750px;
+  margin: 80px auto -20px auto;
+  padding-bottom: 100px;
+}
+
+.pribehy strong,
+.pribehy a {
+  font-weight: bold;
+  color: #8B0A5B;
+}
+
+.pribeh {
+  margin: 40px 0;
+}
+
+.pribeh-fotky {
+  float: left;
+  margin-right: 30px;
+}
+
+.pribeh-text {
+  padding: 5px 0;
+}
+
+.pribeh-text h3 {
+  padding-bottom: 15px;
+}
+
+.pribeh-text p:nth-child(3) {
+  padding-bottom: 15px;
+}
+
+.pribeh a {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+/* ------------ cambridge-modal ------------- */
+
+.modalDialog {
+	position: fixed;
+  overflow-y: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 200ms ease-in;
+	-moz-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 800px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #FFFAF1;
+}
+
+.modalDialog > div h3 {
+  padding: 30px 0 15px 0;
+}
+
+.modalDialog > div p {
+  padding-bottom: 15px;
+}
+
+.close {
+	background: #8B0A5B;
+	color: #FFFFFF !important;
+	line-height: 36px;
+	position: absolute;
+	right: -18px;
+	text-align: center;
+	top: -15px;
+	width: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+  background: #FFFFFF;
+  color: #8B0A5B !important;
+}
 
 /*-------------------------------------
 Metabolic balance
 -------------------------------------*/
 
 .metabolic-balance {
-  padding: 0 2.5%;
   background-color: white;
   z-index: 2;
-  margin-top: 70px;
+}
 
+.wraper {
+  width: 650px;
+  margin: 80px auto 0 auto;
 }
 
 .metabolic-balance h1 {
   padding-top: 70px;
-  margin: 0px 0 40px;
+  margin: 0 0 40px;
   color: #6A8025;
 }
 
-.metabolic-p {
-  padding: 0px 0 30px 0;
-  font-size: 18px;
+.metabolic-benefity {
+  margin: 30px 0 60px 0;
 }
 
-.metabolic-balance img {
-  margin: -10px 10px 20px 20px;
-  vertical-align: middle;
-  width: 70px;
-  display: inline-block;
-  padding: 10px 0;
+.metabolic-benefity li {
+  margin: 40px 0;
 }
 
-.metabolic-balance li{
+.metabolic-benefity li p {
   display: inline-block;
-  padding: 0 0 20px 20px;
-  font-size: 18px;
-  max-width: 600px;
+  width: 80%;
+}
+
+.metabolic-benefity img {
+  width: 80px;
+  margin: 10px 30px 0 0;
+  vertical-align: top;
 }
 
 
 /* ------------ metabolic popis ------------- */
 
 .metabolic-balance h2 {
-  margin: 60px 0 30px;
+  margin: 50px 0 30px;
   color: #6A8025;
-}
-
-.metabolic-popis {
-  background-image: url("../images/foto-metabolic.jpg");
-  background-size: cover;
-  overflow: auto;
-  margin: 20px -2.5% 0 -2.5%;
-}
-
-.metabolic-popis-box {
-  width: 50%;
-  float: left;
-  background-color: rgba(255,255,240,0.9);
-  margin: 30px;
-  padding: 30px;
-}
-
-.metabolic-popis-box h2 {
-  margin-top: 20px;
 }
 
 .metabolic-popis p {
@@ -523,9 +632,28 @@ Metabolic balance
 /* ------------ metabolic poradenství ------------- */
 
 .metabolic-poradenstvi {
-  padding-bottom: 40px;
-  margin-bottom: -20px;
-  max-width: 700px;
+  background-image: url("../images/foto-metabolic.jpg");
+  background-size: cover;
+  overflow: auto;
+  margin: 50px 0 -20px 0;
+}
+
+.metabolic-box {
+  width: 35%;
+  float: left;
+  background-color: rgba(255,255,240,0.9);
+  margin: 160px 100px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.metabolic-box h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.metabolic-box .btn {
+  margin: 40px auto 10px auto;
 }
 
 
@@ -534,58 +662,88 @@ Trichologie
 -------------------------------------*/
 
 .trichologie {
-  padding: 0 2.5%;
   background-color: white;
   z-index: 2;
-  margin-top: 70px;
-  padding-bottom: 30px;
-  margin-bottom: -20px;
+}
+
+.trichologie-bg {
+  background-image: url("../images/trichologie-bg.jpg");
+}
+
+.wraper-t {
+  width: 650px;
+  height: 630px;
+  margin: 80px auto 0 auto;
 }
 
 .trichologie h1 {
-  padding-top: 70px;
-  margin: 0 0 30px;
+  padding-top: 120px;
+  margin: 80px 0 30px;
   color: #6A8025;
 }
 
+.trichologie h2 {
+    margin: 40px 0 40px;
+    color: #6A8025;
+}
+
 .trichologie p {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   max-width: 750px;
+}
+
+.trichologie-benefits {
+  padding-top: 10px;
+  padding-bottom: 80px;
 }
 
 .trichologie-benefits li{
   display: inline-block;
   padding: 0 0 20px 20px;
-  font-size: 18px;
 }
 
 .trichologie-benefits img {
   vertical-align: middle;
-  width: 30px;
+  margin-right: 20px;
+  width: 40px;
   display: inline-block;
 }
 
-.trichologie-prubeh h2 {
-    margin: 40px 0 40px;
-    color: #6A8025;
+/* ------------ trichologie prubeh ------------- */
+
+.trichologie-prubeh {
+  background: white;
+  padding: 50px 70px;
 }
 
-.trichologie-prubeh li {
+.trichologie-prubeh ul {
   display: inline-block;
-  padding: 0 0 40px 30px;
-  font-size: 16px;
-  max-width: 800px;
+  width: 45%;
 }
 
-.trichologie-prubeh img {
-  vertical-align: top;
+.trichologie-prubeh ul li {
+  padding: 20px 0;
+}
+
+.trichologie-prubeh ul li img {
   width: 50px;
-  display: inline-block;
-  margin-top: 3px;
+  vertical-align: bottom;
+  margin: 0 10px 10px 0;
 }
 
-.trichologie footer {
-  margin-top: -60px;
+.trichologie-foto {
+  margin: 0px 50px 0 0;
+  display: block;
+  float: right;
+  width: 40%;
+}
+
+.trichologie-foto img:first-child {
+  margin-bottom: 10px;
+}
+
+.trich-footer {
+  margin-top: 0;
 }
 
 
@@ -594,12 +752,10 @@ O mně
 -------------------------------------*/
 
 .omne {
-  padding: 0 2.5%;
+  padding: 0 70px;
   background-color: white;
   z-index: 2;
   margin-top: 70px;
-  padding-bottom: 30px;
-  margin-bottom: -20px;
 }
 
 .omne-text {
@@ -621,9 +777,14 @@ O mně
   padding-bottom: 20px;
 }
 
-.facebook-timeline {
-  margin: 70px 6% 0 6%;
-  margin-bottom: -300px;
+.certifikaty {
+  width: 45%;
+  float: right;
+  margin: 70px 0;
+}
+
+.certifikaty img {
+  width: 350px;
 }
 
 
@@ -631,29 +792,27 @@ O mně
 Kontakt
 -------------------------------------*/
 
-.kontakt {
-  padding: 0 2.5%;
-  background-color: white;
+.wraper-k {
   z-index: 2;
-  margin-top: 70px;
-  padding-bottom: 120px;
-  margin-bottom: -20px;
+  margin-top: 80px;
+  padding: 0 100px;
 }
 
 .kontakt-text {
   width: 40%;
-  float: left;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .kontakt-text p:nth-child(3) {
-  font-size: 20px;
-  line-height: 1.8em;
+  font-weight: 600;
 }
 
 .kontakt h2 {
   padding-top: 40px;
-  margin: 0px 0 30px;
+  margin: 0px 0 25px;
   font-size: 28px;
+  line-height: 1.3;
 }
 
 .kontakt p {
@@ -661,6 +820,30 @@ Kontakt
   padding-bottom: 20px;
 }
 
+.facebook-timeline {
+  margin: 70px 5% 0 5%;
+}
+
+.kontakt img {
+  width: 460px;
+  padding-top: 5px;
+}
+
+.wraper-k2 {
+  margin: 50px 0 10px;
+  padding-left: 20px;
+  width: 50%;
+  dispaly: inline-block;
+  float: left;
+}
+
+.wraper-k3 {
+  margin: 50px 0 10px;
+  width: 50%;
+  float: right;
+  display: inline-block;
+}
+
 .map {
-  margin-top: 40px;
+  padding-top: 5px;
 }
