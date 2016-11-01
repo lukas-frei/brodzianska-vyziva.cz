@@ -1,0 +1,479 @@
+@media (max-width: 979px) {
+
+  /* ------------ header ------------- */
+  #uvod {
+    height: 300px;
+  }
+  .title {
+    padding: 50px 80px 0 0;
+    text-align: left;
+  }
+  .title h1 {
+    font-size: 34px;
+    max-width: 300px;
+  }
+  .title p {
+    max-width: 300px;
+    text-align: justify;
+  }
+  .title-small {
+    max-width: 200px;
+    line-height: normal;
+    padding: 0;
+    margin: 50px 10% 0 0;
+    font-size: 40px;
+  }
+
+  /* ------------ nav ------------- */
+  .nav-menu {
+    height: 82px;
+    overflow: hidden;
+  }
+  .nav-menu ul {
+    display: none;
+  }
+  .nav-menu a {
+    display: inline-block;
+    width: 50%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .logo h3,
+  .logo p {
+    text-align: center;
+  }
+  .mobile-menu {
+    display: block;
+    float: right;
+    padding: 30px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* ------------ programy ------------- */
+  .programy div {
+    position: relative;
+    margin: 2.5% 10%;
+    width: 80%;
+    min-height: 500px;
+    padding: 35px 80px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  }
+  .programy div p {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  /* ------------ footer ------------- */
+  footer {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .nav-sec {
+    width: 100%;
+    text-align: center;
+    font-size: 140%;
+    line-height: 1.7;
+    padding: 10% 0 40px 0;
+  }
+
+  .nav-sec ul {
+    float: none;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+
+  .facebook {
+    display: none;
+  }
+
+  /* ------------ cambridge ------------- */
+  .cambridge-poradenstvi-box {
+    width: 80%;
+    margin: 400px 10% 40px 10%;
+  }
+  .cambridge-poradenstvi-box p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .pribehy {
+    width: 650px;
+    margin: 80px auto -20px auto;
+  }
+  .pribeh-fotky {
+    padding-top: 7px;
+  }
+
+  /* ------------ metabolic ------------- */
+  .metabolic-box {
+    width: 45%;
+    margin-left: 40px;
+  }
+
+  /* ------------ trichologie ------------- */
+  .trichologie-prubeh {
+    margin: 0 auto;
+  }
+  .trichologie-prubeh h2 {
+    text-align: center;
+  }
+  .trichologie-prubeh ul {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .trichologie-foto {
+    width: 100%;
+    float: none;
+    margin: 40px 0;
+  }
+  .trichologie-foto img {
+    width: 48%;
+  }
+  .trichologie-foto img:first-child {
+    margin-bottom: 0;
+    margin-right: 2%;
+  }
+
+  /* ------------ omne ------------- */
+  .certifikaty img {
+    width: 49%;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+  .cer_trichologie {
+    display: block;
+  }
+
+  /* ------------ kontakt ------------- */
+  .kontakt {
+    margin-bottom: -20px;
+  }
+  .wraper-k,
+  .wraper-k2 {
+    width: 650px;
+    margin: 80px auto 0 auto;
+  }
+  .kontakt-text {
+    width: 90%;
+    padding-left: 5%;
+  }
+  .map {
+    width: 500px;
+    padding-left: 20px;
+  }
+  .wraper-k2 {
+    width: 500px;
+    margin: 0 auto
+  }
+  .wraper-k2 h2 {
+    padding-left: 5px;
+  }
+  .facebook-timeline {
+    float: none;
+    display: block;
+    margin-bottom: 140px;
+  }
+  .wraper-k2 img {
+    display: block;
+    float: none;
+    width: 500px;
+    margin-left: -70px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* ------------ title ------------- */
+  #uvod {
+    height: 480px;
+    background-position: -60px 50px;
+    background-repeat: no-repeat;
+    background-image: url("../images/header-mobile.jpg");
+  }
+  .title {
+    width: 100%;
+    margin: 300px auto 0 auto;
+    padding: 30px 15px 0px 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0), #FFF9F0 60%);
+  }
+  .title h1 {
+    max-width: 400px;
+    margin: 70px auto 20px auto;
+    font-size: 33px;
+  }
+  .title p {
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+  }
+  #uvod-small {
+    background-position: -60px;
+  }
+  .title-small {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 253, 249, .6) 40%);
+    padding: 60px 40px 0 100px;
+    height: 222px;
+    margin: 0;
+    max-width: none;
+    font-size: 36px;
+  }
+  .title-br {
+    display: inline;
+  }
+
+  /* ------------ nav ------------- */
+
+  .nav-index {
+    margin-top: -480px;
+  }
+  .logo {
+    font-size: 14px;
+  }
+  .logo h3 {
+    font-size: 18px;
+  }
+  .nav-menu a {
+    width: 70%;
+  }
+  .nav-menu a:last-child {
+    width: 30%;
+    font-size: 18px;
+  }
+
+  /* ------------ programy ------------- */
+  .programy {
+    background-color: #FFFAF1;
+  }
+  .programy h1 {
+    font-size: 40px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    background-color: #FFFAF1;
+    line-height: normal;
+  }
+  .programy div {
+    position: relative;
+    margin: 0;
+    padding: 50px 15px;
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0);
+    background-color: #FFFAF1;
+  }
+  .programy div p {
+    max-width: 500px;
+    margin: auto;
+  }
+  .programy div img {
+    margin-top: 20px;
+  }
+  .pro-trichologie h2 {
+    font-size: 50px;
+  }
+  .pro-zkusenosti h2 {
+    font-size: 30px;
+  }
+  .pro-zkusenosti p {
+    font-size: 16px;
+    padding: 32px 10px;
+  }
+  /* ------------ footer ------------- */
+  .nav-sec {
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+    line-height: 1.7;
+    padding: 10% 0 40px 0;
+  }
+  .copy {
+    margin-top: -30px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  /* ------------ cambridge ------------- */
+  .wraper {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .cambridge-diet h1 {
+    font-size: 36px;
+    padding: 40px 0 0 0;
+    margin-bottom:
+  }
+  .cambridge-diet h2 {
+    margin-top: 40px;
+  }
+  .cambridge-plany {
+    margin: 0;
+  }
+  .cambridge-plany li {
+    text-align: center;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  .cambridge-plany li:last-child {
+    margin: 30px 0 40px 0;
+    width: 100%;
+  }
+  .cambridge-poradenstvi {
+    background-position: -130px;
+  }
+  .cambridge-poradenstvi-box {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(255,255,240,0.8);
+    border-radius: 0;
+  }
+  .pribehy {
+    width: 90%;
+    padding: 5%;
+  }
+  .pribehy h2 {
+    line-height: normal;
+    margin: -30px 0;
+  }
+  .pribeh-text {
+    clear: both;
+  }
+  .pribeh-fotky {
+    display: inline
+  }
+  .pribeh-fotky img{
+    width: 95%;
+  }
+  .modalDialog > div {
+    width: 90%;
+  }
+  /* ------------ metabolic ------------- */
+  .metabolic-balance h1 {
+    font-size: 34px;
+    padding: 40px 0 0 0;
+    margin-bottom:
+  }
+  .metabolic-benefity li p {
+    width: 100%;
+  }
+  .metabolic-benefity img {
+    margin-bottom: 20px;
+  }
+  .metabolic-poradenstvi {
+    background-position: -180px;
+  }
+  .metabolic-box {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(255,255,240,0.8);
+    border-radius: 0;
+  }
+  /* ------------ trichologie ------------- */
+  .wraper-t {
+    width: 100%;
+    padding: 0 5%;
+    height: auto;
+  }
+  .trichologie {
+    background-color: #FFFAF1;
+    z-index: 2;
+  }
+  .trichologie-bg {
+    background-image: none;
+  }
+  .trichologie h1 {
+    margin: -70px 0 30px;
+    font-size: 34px;
+  }
+  .trichologie-prubeh {
+    background: #FFFAF1;
+    padding: 0 5% 30px 5%;
+    margin-bottom: -25px;
+    margin-top: -30px;
+  }
+  /* ------------ omne ------------- */
+  .omne {
+    padding: 0 5%;
+    margin-top: 40px;
+  }
+  .omne h1 {
+    font-size: 36px;
+  }
+  .omne h2 {
+    line-height: normal;
+    font-size: 30px;
+  }
+  .certifikaty img {
+    width: 100%;
+  }
+  /* ------------ kontakt ------------- */
+
+  .wraper-k {
+    padding: 0;
+    width: 95%;
+  }
+  .kontakt-text {
+    padding: 0;
+    width: 100%;
+    margin-top: 40px;
+    max-width: 400px;
+  }
+  .kontakt-text p:first-of-type {
+    font-size: 16px;
+  }
+  .map {
+    width: 100%;
+    height: 400px;
+    padding-left: 0;
+  }
+  .wraper-k2 {
+    width: 96%;
+    margin: 100px 2% 20px 2%;
+    padding: 0 0 20px 0;
+  }
+  .wraper-k2 h2 {
+    display: none;
+  }
+  .wraper-k2 iframe {
+    display: none;
+  }
+  .wraper-k2 img {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .title-small {
+    display: none;
+  }
+  .programy img {
+    width: 80%;
+  }
+  .trichologie h2 {
+      margin: 30px 0 20px;
+      text-align: left;
+      padding-right: 70px;
+      font-size: 30px;
+      color: #6A8025;
+  }
+  .trichologie-benefits {
+    padding-top: 0;
+    margin-top: -20px;
+    padding-bottom: 0;
+    text-align: center;
+
+  }
+  .trichologie-benefits li {
+    padding-left: 0;
+  }
+  .trichologie-benefits li img {
+    clear: both;
+    display: block;
+    margin: 10px auto 5px;
+  }
+
+}

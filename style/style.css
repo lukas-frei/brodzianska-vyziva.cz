@@ -20,7 +20,7 @@ Setup
 body {
   max-width: 980px;
   margin: auto;
-  background-color: #FFFAF1;
+  background-color: white;
 }
 
 ul {
@@ -85,17 +85,17 @@ a {
 
 .btn-brown:link,
 .btn-brown:visited {
-  background: #9E8E6F;
+  background: linear-gradient(#CCB88F, #9E8E6F);
 }
 
 .btn-pink:link,
 .btn-pink:visited {
-  background: #8B0A5B;
+  background: linear-gradient(#9A5677, #8B0A5B);
 }
 
 .btn-green:link,
 .btn-green:visited {
-  background: #6A8025;
+  background: linear-gradient(#B4C756, #6A8025);
 }
 
 /*-------------------------------------
@@ -129,6 +129,11 @@ Uvod
   display: block;
   float: right;
   padding: 50px 30px 0 0;
+  line-height: normal;
+}
+
+.title-br {
+  display: none;
 }
 
 
@@ -179,7 +184,9 @@ nav ul a:last-child {
 }
 
 nav ul a:hover,
-nav ul a:active {
+nav ul a:active,
+.mobile-menu:hover,
+.mobile-menu:active {
   background: linear-gradient(#F9F2E5, #B19F7C);
   transition: background 0.8s ease;
 }
@@ -200,23 +207,41 @@ nav ul a.active {
   background: linear-gradient(#F9F2E5, #6A8025);
 }
 
+.mobile-menu {
+  display: none;
+}
+
 
 /* ------------ programy ------------- */
 
 .programy {
-  margin-top: 90px;
+  margin-top: 75px;
+  margin-bottom: -20px;
+  padding-bottom: 30px;
   text-align: justify;
+  background-color: #FFFAF1;
+
+}
+
+.programy h1 {
+  text-align: center;
+  padding-top: 80px;
 }
 
 .programy div {
   position: relative;
+  min-height: 620px;
+  height: 100% !important;
   margin: 2.5%;
   width: 45%;
-  height: 600px;
   float: left;
   background-color: white;
   padding: 35px;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.programy p:last-of-type {
+  padding-bottom: 100px;
 }
 
 .programy div:last-child {
@@ -227,7 +252,7 @@ nav ul a.active {
 .programy img {
   display: block;
   margin: 0 auto;
-  width: 380px;
+  width: 340px;
 }
 
 .programy p {
@@ -257,8 +282,14 @@ nav ul a.active {
   color: #6A8025;
 }
 
+.pro-cambridge img {
+  padding-top: 7px;
+}
+
 .pro-cambridge p:first-of-type {
-  color: #8B0A5B
+  color: #8B0A5B;
+  padding: 10px 0 30px 0;
+
 }
 
 .pro-trichologie h2 {
@@ -272,7 +303,6 @@ nav ul a.active {
 }
 
 .pro-zkusenosti h2 {
-  font-weight: bold;
   text-align: center;
   padding: 20px 0;
 }
@@ -281,6 +311,7 @@ nav ul a.active {
   padding: 32px 15px;
   font-size: 18px;
   text-align: center;
+  max-width: 350px !important;
 }
 
 
@@ -329,8 +360,8 @@ Cambridge diet
 -------------------------------------*/
 
 .cambridge-diet {
-  background-color: white;
   z-index: 2;
+  background-color: #FFFAF1;
 }
 
 .wraper {
@@ -359,7 +390,8 @@ Cambridge diet
 /* ------------ cambridge benefits ------------- */
 
 .cambridge-diet h1 {
-  padding-top: 70px;
+  padding-top: 80px;
+  padding-bottom: 10px;
   margin: 0px 0 40px 0;
   color: #8B0A5B;
 }
@@ -477,8 +509,12 @@ Cambridge diet
 
 .pribehy {
   width: 750px;
-  margin: 80px auto -20px auto;
-  padding-bottom: 100px;
+  margin: 100px auto -20px auto;
+  padding-bottom: 60px;
+}
+
+.pribehy h2 {
+  padding-bottom: 20px;
 }
 
 .pribehy strong,
@@ -493,6 +529,9 @@ Cambridge diet
 
 .pribeh-fotky {
   float: left;
+}
+
+.pribeh-fotky img {
   margin-right: 30px;
 }
 
@@ -582,7 +621,7 @@ Metabolic balance
 -------------------------------------*/
 
 .metabolic-balance {
-  background-color: white;
+  background-color: #FFFAF1;
   z-index: 2;
 }
 
@@ -592,9 +631,11 @@ Metabolic balance
 }
 
 .metabolic-balance h1 {
-  padding-top: 70px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   margin: 0 0 40px;
   color: #6A8025;
+  line-height: normal;
 }
 
 .metabolic-benefity {
@@ -662,7 +703,7 @@ Trichologie
 -------------------------------------*/
 
 .trichologie {
-  background-color: white;
+  background-color: #FFFAF1;
   z-index: 2;
 }
 
@@ -685,6 +726,7 @@ Trichologie
 .trichologie h2 {
     margin: 40px 0 40px;
     color: #6A8025;
+    line-height: normal;
 }
 
 .trichologie p {
@@ -712,7 +754,7 @@ Trichologie
 /* ------------ trichologie prubeh ------------- */
 
 .trichologie-prubeh {
-  background: white;
+  background: #FFFAF1;
   padding: 50px 70px;
 }
 
@@ -732,14 +774,23 @@ Trichologie
 }
 
 .trichologie-foto {
-  margin: 0px 50px 0 0;
+  margin: 0px 10px 0 0;
   display: block;
   float: right;
-  width: 40%;
+  width: 43%;
 }
 
 .trichologie-foto img:first-child {
   margin-bottom: 10px;
+}
+
+.trichologie-foto img {
+  width: 99%;
+}
+
+.trichologie .btn {
+  margin: 40px auto 30px auto;
+
 }
 
 .trich-footer {
@@ -753,19 +804,20 @@ O mně
 
 .omne {
   padding: 0 70px;
-  background-color: white;
+  background-color: #FFFAF1;
   z-index: 2;
-  margin-top: 70px;
+  margin-top: 80px;
+  margin-bottom: -20px;
 }
 
 .omne-text {
-  width: 50%;
-  float: left;
+  max-width: 600px;
+  margin: 0 auto;
   padding-right: 20px;
 }
 
 .omne h1 {
-  padding-top: 70px;
+  padding-top: 80px;
   margin: 0px 0 40px;
 }
 
@@ -777,42 +829,55 @@ O mně
   padding-bottom: 20px;
 }
 
+.omne .btn {
+  margin: 30px auto 50px auto;
+}
+
 .certifikaty {
-  width: 45%;
-  float: right;
-  margin: 70px 0;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 60px;
+  margin-bottom: -10px;
 }
 
 .certifikaty img {
-  width: 350px;
+  width: 270px;
+  vertical-align: middle;
 }
 
 
 /*-------------------------------------
 Kontakt
 -------------------------------------*/
+.kontakt {
+  background: #FFFAF1;
+}
 
 .wraper-k {
   z-index: 2;
-  margin-top: 80px;
-  padding: 0 100px;
+  padding: 80px 70px 40px 70px;
+  margin: 80px auto 0 auto;
 }
 
 .kontakt-text {
   width: 40%;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 70px;
 }
 
-.kontakt-text p:nth-child(3) {
+.kontakt-text p:first-of-type {
   font-weight: 600;
+  font-size: 18px;
 }
 
 .kontakt h2 {
-  padding-top: 40px;
-  margin: 0px 0 25px;
+  margin: 0 0 25px;
   font-size: 28px;
   line-height: 1.3;
+}
+
+.kontakt h2 {
+  padding-top: 30px;
 }
 
 .kontakt p {
@@ -820,30 +885,23 @@ Kontakt
   padding-bottom: 20px;
 }
 
-.facebook-timeline {
-  margin: 70px 5% 0 5%;
-}
-
-.kontakt img {
-  width: 460px;
-  padding-top: 5px;
-}
-
 .wraper-k2 {
-  margin: 50px 0 10px;
-  padding-left: 20px;
-  width: 50%;
-  dispaly: inline-block;
+  margin-top: -50px;
+  padding: 0 70px;
+  margin-bottom: -20px;
+  padding-bottom: 40px;
+}
+
+.facebook-timeline {
   float: left;
 }
 
-.wraper-k3 {
-  margin: 50px 0 10px;
-  width: 50%;
+.wraper-k2 img {
+  width: 430px;
+  padding-top: 5px;
   float: right;
-  display: inline-block;
 }
 
-.map {
-  padding-top: 5px;
+.wraper-k2 img:first-of-type {
+  margin-top: -100px;
 }
