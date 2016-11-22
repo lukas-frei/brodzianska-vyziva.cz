@@ -86,16 +86,19 @@ a {
 .btn-brown:link,
 .btn-brown:visited {
   background: linear-gradient(#CCB88F, #9E8E6F);
+  background: -webkit-linear-gradient(#CCB88F, #9E8E6F);
 }
 
 .btn-pink:link,
 .btn-pink:visited {
   background: linear-gradient(#9A5677, #8B0A5B);
+  background: -webkit-linear-gradient(#9A5677, #8B0A5B);
 }
 
 .btn-green:link,
 .btn-green:visited {
   background: linear-gradient(#B4C756, #6A8025);
+  background: -webkit-linear-gradient(#B4C756, #6A8025);
 }
 
 /*-------------------------------------
@@ -144,6 +147,7 @@ nav {
   overflow: auto;
   margin-top: -7px;
   background: linear-gradient(#FFFAF1, #CCB88F);
+  background: -webkit-linear-gradient(#FFFAF1, #CCB88F);
   box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
   position: absolute;
   width: 100%;
@@ -161,6 +165,7 @@ nav {
   float: left;
   padding: 14px;
   background: linear-gradient(#F9F2E5, #B19F7C);
+  background: -webkit-linear-gradient(#F9F2E5, #B19F7C);
   width: 30%;
 }
 
@@ -189,23 +194,27 @@ nav ul a:active,
 .mobile-menu:hover,
 .mobile-menu:active {
   background: linear-gradient(#F9F2E5, #B19F7C);
+  background: -webkit-linear-gradient(#F9F2E5, #B19F7C);
   transition: background 0.8s ease;
 }
 
 nav ul a.active {
   background: linear-gradient(#F9F2E5, #B19F7C);
+  background: -webkit-linear-gradient(#F9F2E5, #B19F7C);
 }
 
 .nav-cambridge:hover,
 .nav-cambridge:active,
 .nav-cambridge.active {
   background: linear-gradient(#F9F2E5, #9A5677);
+  background: -webkit-linear-gradient(#F9F2E5, #9A5677);
 }
 
 .nav-metabolic:hover,
 .nav-metabolic:active,
 .nav-metabolic.active {
   background: linear-gradient(#F9F2E5, #6A8025);
+  background: -webkit-linear-gradient(#F9F2E5, #6A8025);
 }
 
 .mobile-menu {
@@ -320,6 +329,7 @@ nav ul a.active {
 
 footer {
   background: linear-gradient(#CCB88F, #9E8E6F);
+  background: -webkit-linear-gradient(#CCB88F, #9E8E6F);
   box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
   overflow: hidden;
   margin-top: 20px;
