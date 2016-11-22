@@ -152,6 +152,7 @@ nav {
 
 .nav-menu {
   z-index: 10;
+  overflow: hidden;
 }
 
 .logo {
@@ -868,6 +869,7 @@ Kontakt
 .kontakt-text p:first-of-type {
   font-weight: 600;
   font-size: 18px;
+  line-height: 2em;
 }
 
 .kontakt h2 {
