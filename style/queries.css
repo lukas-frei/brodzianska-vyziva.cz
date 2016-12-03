@@ -199,8 +199,8 @@
     width: 100%;
     margin: 300px auto 0 auto;
     padding: 30px 15px 0px 15px;
-    background: linear-gradient(rgba(255, 255, 255, 0), #FFF9F0 60%);
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #FFF9F0 60%);
+    background: linear-gradient(rgba(255, 255, 255, 0), #FFF9F0 60%);
   }
   .title h1 {
     max-width: 400px;
@@ -216,8 +216,8 @@
     background-position: -60px;
   }
   .title-small {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 253, 249, .6) 40%);
     background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 253, 249, .6) 40%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 253, 249, .6) 40%);
     padding: 60px 40px 0 100px;
     height: 222px;
     margin: 0;
