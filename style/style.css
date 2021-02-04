@@ -919,11 +919,18 @@ Kontakt
 }
 
 
+
 .nav-menu ul {
 	display: flex;
 }
-
 .nav-menu ul li {
 	flex-grow: 1;
 	text-aligin: center;
+}
+
+.programy div:last-child {
+	width: 100%;
+}
+.programy div:last-child p {
+	margin: auto;
 }
